@@ -51,6 +51,7 @@ A **hash** function is any function that can be used to map data of arbitrary si
 The **session** hash is a way for Rails to keep track of user states.  A session usually consists of a hash of values and a session id, usually a 32-character string, to identify the hash. Every cookie sent to the client's browser includes the session id. And the other way round: the browser will send it to the server on every request from the client. In Rails you can save and retrieve values using the session method:
 
 session[:user_id] = @current_user.id
+
 User.find(session[:user_id])
 
 This allows two things.  First, it allows us to authenticate a user after logging in without requiring username and password every time, or even having to pass anything to do with the password at all.  The server knows the user logged in before, and what it is passing is that knowledge that "you are you".  Second, it allows us to handle authorization by checking if the session is up (again with no sending of passwords).  If not, we can redirect the user to log in.  If so, we can direct them to the proper resource.
