@@ -4,7 +4,7 @@
 
 The concept of a **controller** is incredibly nebulous.  There are some programmers who believe we need to stop using the word altogether, as it no longer has any consistent meaning.  Fun, right?
 
-My definition in Rails is two-part "a **controller** is the thing that drives your main functionality" and "a **controller** is the thing that connects your **model** to your view".
+My definition in Rails is two-part "a **controller** is the thing that drives your main functionality" and "a **controller** is the thing that connects your **model** to your **view**".
 
 DHH does not agree, and as we all know, DHH is quite opinionated.  And he, unlike Matz, is quite vocal and loud-spoken about those opinions.  
 
@@ -57,8 +57,8 @@ This allows two things.  First, it allows us to authenticate a user after loggin
 
 Further Resources:
 
-*[bcrypt Wikipedia Page](https://en.wikipedia.org/wiki/Bcrypt)
-*[More on Sessions - Rails Guides](http://guides.rubyonrails.org/security.html)
+* [bcrypt Wikipedia Page](https://en.wikipedia.org/wiki/Bcrypt)
+* [More on Sessions - Rails Guides](http://guides.rubyonrails.org/security.html)
 
 ##What does "as" do in Rails?
 
