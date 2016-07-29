@@ -90,6 +90,6 @@ Let's have a quick look at what that means in a Rails app...
 
 `params[]` is actually a Rack hash, which is the web server for both Sinatra and Rails.  It works in both Sinatra and Rails, but slightly differently.
 
-The main different we have experienced is the handling of JSON.  While Rails does this automatically for us (helping out yet again, huh, Rails?), Sinatra is bare-bones so uses the default Rack hash, which does not have this parsing ability.
+The main difference we have experienced is the handling of JSON.  While Rails does this automatically for us (helping out yet again, huh, Rails?), Sinatra is bare-bones so uses the default Rack functionality, which does not have this parsing ability.
 
 So basically, if you're sending **form data**, there's almost no difference between `params` in Rails and Sinatra.  If, however, you're sending JSON, Sinatra requires you to bring in a `json` library and use `req.body`.
